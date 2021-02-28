@@ -10,7 +10,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*'],
   transform: {
-    '^.+\\.js$': 'babel-jest',
+    '^.+\\.js$': 'babel-jest'
   },
-  transformIgnorePatterns: ['/node_modules/'],
+  transformIgnorePatterns: ['/node_modules/']
 };

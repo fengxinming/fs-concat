@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "beforeAll": true,
+    "afterAll": true
+  },
+  "rules": {
+    "strict": 0,
+    "arrow-body-style": 0,
+    "no-param-reassign": 0,
+    "consistent-return": 0,
+    "linebreak-style": 0,
+    "func-names": 0,
+    "import/no-unresolved": 0,
+    "no-plusplus": 0,
+    "no-use-before-define": 0,
+    "no-bitwise": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ]
+  }
+}

@@ -8,13 +8,18 @@ describe('测试 concat', () => {
   it('对比文件大小', () => {
     let size = 0;
     const fileList = [];
-    readdirSync(join(__dirname, 'files'), 'utf8').filter(n => n !== 'index.js').forEach((file) => {
+    readdirSync(join(__dirname, 'files'), 'utf8').filter((n) => n !== 'index.js').forEach((file) => {
       file = join(__dirname, 'files', file);
       fileList.push(file);
       size += statSync(file).size;
     });
+
     const dest = join(__dirname, 'files/index.js');
-    unlinkSync(dest);
+    try {
+      unlinkSync(dest);
+    // eslint-disable-next-line no-empty
+    } catch (e) {}
+
     return concat(fileList, dest).then(() => {
       expect(statSync(dest).size).toBe(size);
     });
