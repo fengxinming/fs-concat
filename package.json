@@ -1,0 +1,20 @@
+{
+  "name": "fs-concat",
+  "version": "1.0.0",
+  "description": "文件合并工具",
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "eslint --fix --ext .js ./",
+    "test": "jest --config jest.config.js"
+  },
+  "keywords": [
+    "fs",
+    "concat"
+  ],
+  "author": "Jesse Feng <fxm0016@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3"
+  }
+}
