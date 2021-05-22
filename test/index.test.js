@@ -17,8 +17,8 @@ describe('测试 concat', () => {
     const dest = join(__dirname, 'files/index.js');
     try {
       unlinkSync(dest);
-    // eslint-disable-next-line no-empty
-    } catch (e) {}
+    }
+    catch (e) {}
 
     return concat(fileList, dest).then(() => {
       expect(statSync(dest).size).toBe(size);

@@ -21,6 +21,7 @@ if (program.args.length) {
     .then((dest) => console.log(`\n created ${dest} in ${Date.now() - start} ms\n`))
     // eslint-disable-next-line no-console
     .catch((err) => console.error(err));
-} else {
+}
+else {
   throw new Error('no files specified');
 }
